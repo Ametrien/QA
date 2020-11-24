@@ -1,4 +1,4 @@
-package hellocucumber;
+package labnrsix;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,7 +16,6 @@ public class CartActivity {
     }
 
     WebDriver driver = new ChromeDriver();
-
 
     @Given("user accesses the shop")
     public void userAccessesTheShop() {
@@ -38,4 +37,5 @@ public class CartActivity {
         } else
             Assert.fail();
     }
+
 }

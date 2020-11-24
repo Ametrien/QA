@@ -1,13 +1,12 @@
-package hellocucumber;
+package labnrsix;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
-import javax.swing.*;
 
 public class PriceSlider {
 
@@ -35,7 +34,10 @@ public class PriceSlider {
 
     @Then("the price range changes")
     public void thePriceRangeChanges() {
-        driver.findElement(By.cssSelector("left: 39.1333%;")).getAttribute("id");
-
+        WebElement changes = driver.findElement(By.cssSelector("left: 59.1333%;"));
+        if(changes != null){
+            System.out.println("It worked!");
+        } else
+            Assert.fail();
     }
 }

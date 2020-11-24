@@ -1,4 +1,4 @@
-package hellocucumber;
+package labnrsix;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,8 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
-import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty"})

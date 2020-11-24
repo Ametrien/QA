@@ -1,4 +1,4 @@
-package hellocucumber;
+package labnrsix;
 
 
 import io.cucumber.java.en.Given;
