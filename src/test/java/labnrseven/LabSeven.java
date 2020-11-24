@@ -100,13 +100,15 @@ public class LabSeven {
             System.out.println("There is a \"Did you mean something else\" section");
         } else
             System.out.println("Oops, there is no \"Did you mean something else\" section");
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
     }
 
-//    @After
-//    public void quitDriver(){
+    @After
+    public void quitDriver(){
 //        driver.close();
-//        driver.quit();
-//    }
+        driver.quit();
+    }
 
 
 }
